@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bruce Yang 的个人博客，记录 AI、编程、云原生与数字生活。"
+    />
+    <meta name="theme-color" content="#0b1020" />
+    <title>Bruce Yang | Tech Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Bruce Yang 首页">
+        <span class="brand-mark">BY</span>
+        <span>Bruce Yang</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="#posts">文章</a>
+        <a href="#lab">实验室</a>
+        <a href="#stack">技术栈</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换主题">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Personal Tech Blog</p>
+          <h1>记录技术、产品与 AI 时代的每一次进化。</h1>
+          <p class="hero-subtitle">
+            这里是 Bruce Yang 的数字花园：分享编程实践、智能工具、云端架构与真实项目复盘。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="primary-action" href="#posts">阅读精选</a>
+            <a class="secondary-action" href="https://github.com/bruceyang2012" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="signal-panel reveal" aria-label="博客概览">
+          <div class="signal-header">
+            <span class="live-dot"></span>
+            <span>Now Building</span>
+          </div>
+          <div class="metric-grid">
+            <div>
+              <strong>AI</strong>
+              <span>智能协作</span>
+            </div>
+            <div>
+              <strong>Web</strong>
+              <span>前端工程</span>
+            </div>
+            <div>
+              <strong>Cloud</strong>
+              <span>云原生实践</span>
+            </div>
+            <div>
+              <strong>Life</strong>
+              <span>数字生活</span>
+            </div>
+          </div>
+          <pre class="terminal-card" aria-label="终端风格展示"><code>$ blog deploy --target github-pages
+✓ design refreshed
+✓ performance first
+✓ responsive ready</code></pre>
+        </aside>
+      </section>
+
+      <section id="posts" class="content-band">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Posts</p>
+            <h2>精选文章</h2>
+          </div>
+          <div class="post-grid">
+            <article class="post-card reveal">
+              <span class="post-tag">AI 编程</span>
+              <h3>让 AI 成为真正可控的工程伙伴</h3>
+              <p>从提示词、上下文管理到代码审查，整理一套更稳定的人机协作工作流。</p>
+              <a href="#" aria-label="阅读文章：让 AI 成为真正可控的工程伙伴">阅读文章</a>
+            </article>
+            <article class="post-card reveal">
+              <span class="post-tag">前端架构</span>
+              <h3>现代个人博客的性能与体验升级</h3>
+              <p>用原生能力、渐进增强与精简资源，把静态站点做出应用级质感。</p>
+              <a href="#" aria-label="阅读文章：现代个人博客的性能与体验升级">阅读文章</a>
+            </article>
+            <article class="post-card reveal">
+              <span class="post-tag">云原生</span>
+              <h3>从本地脚本到云端自动化</h3>
+              <p>记录日常效率工具如何演进成可维护、可观测、可复用的系统。</p>
+              <a href="#" aria-label="阅读文章：从本地脚本到云端自动化">阅读文章</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="lab" class="section-shell split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Digital Lab</p>
+          <h2>实验室</h2>
+          <p>
+            把正在探索的想法放在台面上：小工具、原型、自动化脚本和 AI 辅助工作流。
+          </p>
+        </div>
+        <div class="lab-list">
+          <article class="lab-item reveal">
+            <span>01</span>
+            <div>
+              <h3>AI Workflow Kit</h3>
+              <p>沉淀可复用的提示词模板、评测清单与工程化实践。</p>
+            </div>
+          </article>
+          <article class="lab-item reveal">
+            <span>02</span>
+            <div>
+              <h3>Personal Dashboard</h3>
+              <p>整合阅读、任务、代码与灵感捕获的个人控制台。</p>
+            </div>
+          </article>
+          <article class="lab-item reveal">
+            <span>03</span>
+            <div>
+              <h3>Edge Tools</h3>
+              <p>用轻量前端和边缘函数构建随手可用的在线工具。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="stack" class="content-band compact-band">
+        <div class="section-shell">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tech Stack</p>
+            <h2>关注方向</h2>
+          </div>
+          <div class="stack-cloud reveal" aria-label="技术关键词">
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>Python</span>
+            <span>LLM</span>
+            <span>Prompt Engineering</span>
+            <span>Cloud Native</span>
+            <span>GitHub Actions</span>
+            <span>Productivity</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <strong>Bruce Yang</strong>
+        <p>持续构建，持续记录。</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/bruceyang2012" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="mailto:bruceyang2012@github.io">Email</a>
+        <a href="#top">返回顶部</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
