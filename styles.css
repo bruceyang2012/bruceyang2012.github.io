@@ -384,6 +384,53 @@ h3 {
   padding: 110px 0;
 }
 
+.archive-section {
+  padding: 110px 0 0;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.archive-card {
+  display: flex;
+  min-height: 188px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(24px);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.archive-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 189, 89, 0.42);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.archive-card span {
+  color: var(--accent-3);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.archive-card strong {
+  margin-top: 28px;
+  font-size: 1.45rem;
+}
+
+.archive-card small {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .lab-list {
   display: grid;
   gap: 14px;
@@ -502,6 +549,10 @@ h3 {
   .post-grid {
     grid-template-columns: 1fr;
   }
+
+  .archive-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 520px) {
@@ -532,6 +583,18 @@ h3 {
 
   .lab-item {
     grid-template-columns: 1fr;
+  }
+
+  .archive-section {
+    padding-top: 74px;
+  }
+
+  .archive-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .archive-card {
+    min-height: 150px;
   }
 
   .signal-panel {
